@@ -1,0 +1,52 @@
+.header {
+    height: 80vh; /* Adjust height as needed */
+    margin: 30px auto;
+    background: url('/home_banner.png') no-repeat center;
+    background-size: contain; /* Ensures the whole image fits in the container */
+    position: relative;
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2vw; /* Slightly smaller gap for compact layout */
+    max-width: 40%; /* Adjust width as needed */
+    top: 15%; /* Adjusted for better vertical alignment */
+    left: 6vw; /* Adjust for horizontal alignment */
+    animation:fadeIn 4s
+}
+
+.header-contents h2 {
+    font-weight: 500;
+    color: white;
+    font-size: max(3.5vw, 22px);
+    margin-top: 10px; /* Corrected with semicolon */
+}
+
+.header-contents p {
+    color: white;
+    font-size: max(1.5vw, 16px); /* Responsive font size for paragraph */
+    line-height: 1.5; /* Improved readability */
+    margin: 0;
+}
+
+.header-contents button {
+    padding: 10px 20px;
+    background-color: tomato; /* Button color */
+    color: white;
+    font-size: max(1vw, 14px); /* Responsive font size for button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border:none;
+    padding:1vw 2.3vw;
+    border-radius:50px;
+    
+}
+
+.header-contents button:hover {
+    background-color: darkred; /* Darker shade on hover */
+   
+}
