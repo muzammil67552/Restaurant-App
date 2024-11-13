@@ -1,0 +1,91 @@
+/* Footer.css */
+
+.footer {
+    color: #d9d9d9;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 8vw;
+    padding-top: 80px;
+    margin-top:50px
+}
+
+.footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+}
+
+.footer-content-left,
+.footer-content-center,
+.footer-content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-content-left li,
+.footer-content-center li,
+.footer-content-right li {
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-content-right h2,
+.footer-content-center h2 {
+    color: white;
+}
+
+.footer-social-icons img {
+    width: 40px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.footer hr {
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background-color: gray;
+}
+
+/* Copyright section aligned at the bottom */
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #a1a1a1;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .footer-content {
+        gap: 20px;
+    }
+
+    .footer-social-icons img {
+        width: 30px;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+}
