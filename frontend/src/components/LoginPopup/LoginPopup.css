@@ -1,0 +1,148 @@
+/* LoginPopup.css */
+
+/* Overlay for the popup */
+.login-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 10px;
+}
+
+/* Main popup container */
+.login-popup-container {
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Title and close icon */
+.login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-popup-title h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+.login-popup-title img {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+/* Input fields */
+.login-popup-inputs input {
+    width: 100%;
+    padding: 0.75em;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Button styling */
+.login-popup-container button {
+    width: 100%;
+    padding: 0.75em;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.login-popup-container button:hover {
+    background-color: #e5533d;
+}
+
+/* Terms and conditions */
+.login-popup-condition {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.login-popup-condition input {
+    margin-right: 10px;
+}
+
+.login-popup-condition p {
+    margin: 5px 0;
+}
+
+.login-popup-condition span {
+    color: #ff6347;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-popup-condition span:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .login-popup-container {
+        padding: 1.5em;
+    }
+
+    .login-popup-title h2 {
+        font-size: 1.3rem;
+    }
+
+    .login-popup-container button {
+        font-size: 0.95rem;
+    }
+
+    .login-popup-condition p,
+    .login-popup-condition span {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-popup-container {
+        padding: 1em;
+    }
+
+    .login-popup-title h2 {
+        font-size: 1.2rem;
+    }
+
+    .login-popup-inputs input {
+        padding: 0.6em;
+    }
+
+    .login-popup-container button {
+        padding: 0.6em;
+        font-size: 0.9rem;
+    }
+
+    .login-popup-condition {
+        font-size: 0.8rem;
+    }
+}
